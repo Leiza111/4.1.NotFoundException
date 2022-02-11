@@ -98,7 +98,7 @@ class ProductManagerTest {
     void shouldRemoveByNonexistentId() {
 
         assertThrows(NotFoundException.class, () -> {
-            repository.removeById(5);
+            repository.removeById(15);
         });
     }
 

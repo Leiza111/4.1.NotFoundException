@@ -35,7 +35,8 @@ public class ProductRepository {
     //удаление по id
     public void removeById(int id) {
         if (findById(id) == null) {
-            throw new NotFoundException("Element with id: " + id + " not found");
+            throw new NotFoundException(
+                    "Element with id: " + id + " not found");
         }
 
         int length = items.length-1;
